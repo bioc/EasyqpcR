@@ -60,8 +60,16 @@ nrmData  <- function(data, r, E, Eerror, nSpl, nbRef, Refposcol, nCTL, CF,
         
         
     w1 <- r3*sqrt( (Eerror1[,Refposcol]*sqrt(r)*((ctmeanall1-ctmean1)[,Refposcol])/E1[,Refposcol])^2+((log(E1[,Refposcol])*u4[,Refposcol])^2))
-    y <- (r3/sqrt(r))*sqrt(rowSums((w1/(nbRef*r3))^2)) 
-    y1 <- as.data.frame(y[,2])
+
+    if (nbRef == 1) {
+        y <- (r3/sqrt(r)) * sqrt(rowSums(as.data.frame(w1/(nbRef * r3))^2))
+        y1 <- as.data.frame(y)
+    }
+    else {
+        y <- (r3/sqrt(r)) * sqrt(rowSums((w1/(nbRef * r3))^2))
+        y1 <- as.data.frame(y[, 2])
+    }
+
     rownames(y1) <- rownames(rq1)
     colnames(y1) <- "SE(NF)"
     yy2 <- cbind(rq1, y1)
@@ -70,7 +78,12 @@ nrmData  <- function(data, r, E, Eerror, nSpl, nbRef, Refposcol, nCTL, CF,
     r5 <- matrix(r4, ncol=length(i), byrow=TRUE)
         
     y2 <- sqrt(r)*(y1[rep(1:(nrow(y1)), each=ncol(data1)),])
-    y3 <- matrix(y2, ncol=length(i), byrow=TRUE)
+    if (nbRef == 1) {
+        y3 <- matrix(as.matrix(y2), ncol = length(i), byrow = TRUE)
+    }
+    else {
+        y3 <- matrix(y2, ncol = length(i), byrow = TRUE)
+    }
         
     w2 <- (RQ)*sqrt( (Eerror1*sqrt(r)*(ctmeanall1-ctmean1)/E1)^2+((log(E1)*u4)^2)) 
         
