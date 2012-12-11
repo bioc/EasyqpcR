@@ -5,3 +5,4 @@
 \contentsline {section}{\numberline {5}Attenuation of inter-run variations}{7}{section.5}
 \contentsline {section}{\numberline {6}Aggregation of multiple independent biological replicates from the same experiment}{8}{section.6}
 \contentsline {section}{\numberline {7}RStudio and gWidgets: tools to facilitate your qPCR data analysis}{11}{section.7}
+\contentsline {section}{\numberline {8}How to analyse qPCR data with EasyqpcR when samples and genes are spread accross runs ?}{15}{section.8}
