@@ -2,3 +2,22 @@ version 1.0.0
 
   o First version of this package.
 
+version 1.1.1
+
+  o Bug fixed in nrmData function when there is only one reference gene used to normalize qPCR data.
+
+  o Addition of a new chapter in the vignette.
+
+  o Correction of the example of inter-run variation correction.
+
+version 1.1.2
+
+  o Fix the vignette for the scaling to control group.
+
+version 1.1.3
+
+  o Addition of data files and fix the vignette for the scaling to control group.
+
+version 1.2.0
+
+o Release of the corrected version of the package with addition of new data files.
