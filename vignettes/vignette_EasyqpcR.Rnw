@@ -526,7 +526,7 @@ To respect the calculation of the NRQs which need the whole samples to take into
  account the whole variability, we have to apply the \code{nrmData} function 
  on the whole samples. But we will do it for each run with the correction by the
  run-specific calibration factor and after each inter-run variation 
- correction we isolate the corresponding CNRQs (\italic{i.e.} the NRQs corrected
+ correction we isolate the corresponding CNRQs (\emph{i.e.} the NRQs corrected
  by the specific CF), for example:
 
 We perform inter-run variation correction on the whole samples by the CF of the 
