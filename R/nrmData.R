@@ -12,7 +12,7 @@ nrmData  <- function(data, r, E, Eerror, nSpl, nbRef, Refposcol, nCTL, CF,
     rownames(ctmean) <- data[seq(1, nrow(data), by=r), 1]
     ctmean1 <- ctmean[,2:n]
         
-    ctmeanall <- colMeans(ctmean[,i])
+    ctmeanall <- colMeans(ctmean[,i], na.rm=na.rm)
     ctmeanall <- as.data.frame(ctmeanall)
     ctmeanall1 <- ctmeanall[rep(1:nrow(ctmeanall), each=nrow(ctmean)),]
     E1 <- matrix(rep(E, each=nrow(ctmean)), nrow=nrow(ctmean), byrow=FALSE)
@@ -98,7 +98,7 @@ nrmData  <- function(data, r, E, Eerror, nSpl, nbRef, Refposcol, nCTL, CF,
             
         if (nCTL >= 2) {
 
-            o1 <- (colProds(o[1:nCTL,]))^(1/length(1:nCTL))
+            o1 <- (colProds(o[1:nCTL,], na.rm=na.rm))^(1/length(1:nCTL))
             o1 <- as.data.frame(o1) 
 
         } else {
@@ -112,7 +112,7 @@ nrmData  <- function(data, r, E, Eerror, nSpl, nbRef, Refposcol, nCTL, CF,
             
         if (nCTL >= 2){
                 
-            o1 <- colMeans(o[1:nCTL,])
+            o1 <- colMeans(o[1:nCTL,], na.rm=na.rm)
             o1 <- as.data.frame(o1)
                 
         } else {
