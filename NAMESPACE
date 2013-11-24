@@ -2,4 +2,6 @@ export(nrmData, calData, totData, badCt, slope)
 importFrom(matrixStats, colProds)
 importFrom(plotrix, std.error)
 importFrom(plyr, mdply)
+importFrom(gWidgetsRGtk2)
+
 
