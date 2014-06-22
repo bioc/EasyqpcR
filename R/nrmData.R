@@ -18,9 +18,9 @@ nrmData  <- function(data, r, E, Eerror, nSpl, nbRef, Refposcol, nCTL, CF,
     E1 <- matrix(rep(E, each=nrow(ctmean)), nrow=nrow(ctmean), byrow=FALSE)
     RQ <- E1^(ctmeanall1-ctmean1)     
         
-    rootgeoM <- function(data, E){data^(1/nbRef)}
+    rootgeoM <- function(data, E, na.rm=na.rm){data^(1/nbRef)}
         
-    geoM <- mdply(RQ[,Refposcol], 'prod', MARGIN=1)
+    geoM <- mdply(RQ[,Refposcol], 'prod', MARGIN=1, na.rm=na.rm)
     geoM <- geoM[, ncol(geoM)]
     geoM <- as.data.frame(geoM)
     rq1 <- rootgeoM(geoM, E)
