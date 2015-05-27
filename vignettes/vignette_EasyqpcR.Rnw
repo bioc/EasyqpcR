@@ -8,7 +8,6 @@
 \usepackage{geometry}\usepackage{color}
 \definecolor{darkblue}{rgb}{0.0,0.0,0.75}
 \usepackage{listings}
-\usepackage{inconsolata}
 \usepackage[%
 baseurl={http://irtomit.labo.univ-poitiers.fr/},%
 pdftitle={EasyqpcR: low-throughput real-time quantitative PCR data analysis},%
