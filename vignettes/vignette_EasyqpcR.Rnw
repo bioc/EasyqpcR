@@ -251,9 +251,7 @@ Finally, we use the final function \code{totData} and indicate that we want to
 
 <<step7, comment=NA>>=
 
-totData(data=d2, r=3, geo=TRUE, logarithm=TRUE, base=2, 
-       transformation=TRUE, nSpl=5, linear=TRUE,
-       na.rm=TRUE)
+totData(data = d2, r = 3, base=2, nSpl = 15, nCTL = 2, na.rm = TRUE)
 
 @
 
