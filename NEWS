@@ -22,3 +22,6 @@ Version 1.5.0
 
   o Issue fixed concerning the samples from a group which do not have Ct values in nrmData function which was inducing errors (NA values in the whole column).
 
+Version 1.11
+
+  o Major fix: the totData function has been simplified in order to allow the user an easy extraction of the data for statistical analysis. The number of parameters has been reduced to limit the possible confusion in the use of this function.
