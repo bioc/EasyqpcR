@@ -16,8 +16,7 @@ This function aggregates qPCR biological replicates and calculates the main
  corrections, including log transformation, mean centering, and autoscaling.
 }
 \usage{
-totData(data, r, geo = TRUE, logarithm = TRUE, base, transformation = TRUE,
-	nSpl, linear = TRUE, na.rm = na.rm)
+totData(data, r, base, nSpl, nCTL, na.rm = na.rm)
 }
 
 \arguments{
@@ -27,28 +26,16 @@ data.frame containing row datas (genes in columns, samples in rows, Cq values).
   \item{r}{
 numeric, number of qPCR replicates.
 }
-  \item{geo}{
-logical, the function will use the geometrical mean of your biological
- replicates if TRUE or the arithmetic mean if FALSE.
-}
-  \item{logarithm}{
-logical, the NRQs will be log-transformed.
-}
   \item{base}{
 numeric, the logarithmic base (2 or 10).
-}
-  \item{transformation}{
-logical, if TRUE, the transformation procedure for highly variable biological
- replicates (but with the same tendency) will be done.
 }
   \item{nSpl}{
 numeric, the number of samples.
 }
-  \item{linear}{
-logical, after the transformation procedure done, your raw data will be
- normalized (anti-log-transformed).
+  \item{nCTL}{
+numeric, number of samples forming your control group.
 }
-  \item{na.rm}{
+\item{na.rm}{
 logical, indicating whether NA values should be stripped before the computation
  proceeds.
 }
@@ -69,15 +56,14 @@ For more information for the way to use this function, please see the vignette.
 }
 \value{
 
- \item{Mean of your qPCR runs}{The geometric (if TRUE for geo) or arithmetic
- mean of your biological replicates.}
- \item{Standard deviations of your qPCR runs}{The standard deviation of your
- biological replicates.}
- \item{Standard errors of your qPCR runs}{The standard error of your biological
- replicates.}
- \item{Transformed data}{If TRUE for transformation, your raw data will be
- transformed by the algorithm of Willems et al. (2008).}
- \item{Reordered transformed data}{The transformed data reordered by rowname.}
+ \item{Standardized data according to Willems procedure (2008)}{The 
+ standardized data according to the Willems procedure (2008). These data must 
+ be used for statistical analysis.}
+ \item{Mean}{The mean of the biological replicates for each sample.}
+ \item{Lower Confidence Interval 95\%}{The Lower Confidence Interval 95\% of 
+ the biological replicates for each sample.}
+ \item{Upper Confidence Interval 95\%}{The Upper Confidence Interval 95\% of 
+ the biological replicates for each sample.}
 
 
 }
