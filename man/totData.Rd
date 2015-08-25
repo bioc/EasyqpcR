@@ -5,14 +5,11 @@
 Aggregation of qPCR biological replicates and data transformation
 }
 \description{
-This function aggregates qPCR biological replicates and calculates the main
- parameters : mean (arithmetic or geometric), the standard deviation and the
- standard error from your biological replicates of your experience. This
- function has an algorithm published by Willems et al. (2008) which performs a
- standardization procedure that can be applied to data sets that display high
- variation between biological replicates. This enables proper statistical
- analysis and drawing relevant conclusions. The procedure is not new, it has
- been used in microarray data analysis and is based on a series of sequential
+ This function aggregates qPCR biological replicates and performs the algorithm 
+ published by Willems et al. (2008) which is a standardization procedure that 
+ can be applied to data sets that display high variation between biological replicates. 
+ This enables proper statistical  analysis and drawing relevant conclusions. The procedure 
+ is not new, it has been used in microarray data analysis and is based on a series of sequential
  corrections, including log transformation, mean centering, and autoscaling.
 }
 \usage{
