@@ -43,14 +43,13 @@ logical, indicating whether NA values should be stripped before the computation
 \details{
 The standardization procedure used in this function (if TRUE for the
  transformation argument) is based on the article of Willems et al. (2008).
- This function perform successively thEerror operations : log-transformation of
- your raw data, mean of your log-transformed data for each biological replicate,
- mean centering for each biological replicate, standard deviation of each
- mean-centered biological replicate, autoscaling of your data, i.e., your
+ This function performs successively these operations : log-transformation of
+ your raw data, mean centering of the log-transformed data, autoscaling of your 
+ mean-centered and log-transformed data, i.e., your
  mean-centered data for each biological replicate will be divided by the
  standard deviation of the mean-centered biological replicate and then
  multiplicated by the mean of the standard deviation of all the biological
- replicates.
+ replicates. The lower and upper confidence intervals (at 95\%) are also computed.
 
 For more information for the way to use this function, please see the vignette.
 }
