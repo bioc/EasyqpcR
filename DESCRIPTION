@@ -2,8 +2,8 @@ Package: EasyqpcR
 Type: Package
 Title: EasyqpcR for low-throughput real-time quantitative PCR data
         analysis
-Version: 1.10.1
-Date: 2013-11-23
+Version: 1.10.2
+Date: 2015-08-25
 Author: Le Pape Sylvain
 Maintainer: Le Pape Sylvain <sylvain.le.pape@univ-poitiers.fr>
 Description: This package is based on the qBase algorithms published by 
@@ -12,8 +12,14 @@ Description: This package is based on the qBase algorithms published by
  amplification efficiencies, relative quantities and their standard errors, 
  normalization factors based on the best reference genes choosen (using the 
  SLqPCR package), and then the normalized relative quantities, the NRQs scaled 
- to your control and their standard errors. This package has been created for 
- low-throughput qPCR data analysis.
+ to your control and their standard errors. It proposes also a function 
+ to aggregate the qPCR biological replicates followed by the realization 
+ of the algorithm published by Willems et al. (2008) which is a standardization 
+ procedure that  can be applied to data sets that display high variation between 
+ biological replicates. This enables proper statistical  analysis and drawing 
+ relevant conclusions. This package has been created for low-throughput qPCR 
+ data analysis.
+
 Imports: plyr, matrixStats, plotrix, gWidgetsRGtk2
 Suggests: SLqPCR, qpcrNorm, qpcR, knitr
 biocViews: qPCR, GeneExpression
