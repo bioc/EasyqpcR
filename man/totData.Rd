@@ -30,7 +30,7 @@ numeric, number of qPCR replicates.
 numeric, the logarithmic base (2 or 10).
 }
   \item{nSpl}{
-numeric, the number of samples.
+numeric, the total number of samples (from all the biological replicates).
 }
   \item{nCTL}{
 numeric, number of samples forming your control group.
@@ -181,8 +181,8 @@ c2 <- as.data.frame(c1)
 
 d2 <- rbind(a2, b2, c2)
 
-totData(data=d2, r=3, base=2, nSpl=5, nCTL = 2,
-	na.rm=TRUE)
+totData(data = d2, r = 3, base = 2, nSpl = 15, nCTL = 2,
+	na.rm = TRUE)
 
 }
 
