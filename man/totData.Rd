@@ -81,7 +81,7 @@ Sylvain Le pape <sylvain.le.pape@univ-poitiers.fr>
 data(qPCR_run1,qPCR_run2,qPCR_run3)
 
 nrmData(data = qPCR_run1 , r=3, E=c(2, 2, 2, 2), 
-	      Eerror=c(0.02, 0.02, 0.02, 0.02), nSpl=5, 
+        Eerror=c(0.02, 0.02, 0.02, 0.02), nSpl=5, 
 	      nbRef=2, Refposcol=1:2, nCTL=2, 
 	      CF=c(1, 1, 1, 1), CalPos=5, trace=TRUE, geo=TRUE, na.rm=TRUE)
 
@@ -181,8 +181,7 @@ c2 <- as.data.frame(c1)
 
 d2 <- rbind(a2, b2, c2)
 
-totData(data=d2, r=3, geo=TRUE, logarithm=TRUE, base=2, 
-	transformation=TRUE, nSpl=5, linear=TRUE,
+totData(data=d2, r=3, base=2, nSpl=5, nCTL = 2,
 	na.rm=TRUE)
 
 }
