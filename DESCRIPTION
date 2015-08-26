@@ -19,7 +19,6 @@ Description: This package is based on the qBase algorithms published by
  biological replicates. This enables proper statistical analysis to draw 
  relevant conclusions. This package has been created for low-throughput qPCR 
  data analysis.
-
 Imports: plyr, matrixStats, plotrix, gWidgetsRGtk2
 Suggests: SLqPCR, qpcrNorm, qpcR, knitr
 biocViews: qPCR, GeneExpression
