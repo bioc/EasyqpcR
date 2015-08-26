@@ -13,10 +13,10 @@ Description: This package is based on the qBase algorithms published by
  normalization factors based on the best reference genes choosen (using the 
  SLqPCR package), and then the normalized relative quantities, the NRQs scaled 
  to your control and their standard errors. It proposes also a function 
- to aggregate the qPCR biological replicates followed by the realization 
+ to aggregate the qPCR biological replicates followed by the application 
  of the algorithm published by Willems et al. (2008) which is a standardization 
- procedure that  can be applied to data sets that display high variation between 
- biological replicates. This enables proper statistical  analysis and drawing 
+ procedure that can be applied to data sets that display high variations between 
+ biological replicates. This enables proper statistical analysis to draw 
  relevant conclusions. This package has been created for low-throughput qPCR 
  data analysis.
 
@@ -24,4 +24,4 @@ Imports: plyr, matrixStats, plotrix, gWidgetsRGtk2
 Suggests: SLqPCR, qpcrNorm, qpcR, knitr
 biocViews: qPCR, GeneExpression
 License: GPL (>=2)
-Packaged: 2013-11-28 07:48:55 UTC; sysy-nana
+Packaged: 2015-08-25 17:29:06 UTC; sysy-nana
