@@ -23,4 +23,5 @@ Imports: plyr, matrixStats, plotrix, gWidgetsRGtk2
 Suggests: SLqPCR, qpcrNorm, qpcR, knitr
 biocViews: qPCR, GeneExpression
 License: GPL (>=2)
-Packaged: 2015-08-25 17:29:06 UTC; sysy-nana
+Packaged: 2015-08-26 21:02:58 UTC; sysy-nana
+NeedsCompilation: no
