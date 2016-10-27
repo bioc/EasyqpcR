@@ -1,8 +1,0 @@
-\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
-\contentsline {section}{\numberline {2}Amplification efficiency calculation}{3}{section.2}
-\contentsline {section}{\numberline {3}Calculation of the expression values from one or multiple qPCR run(s)}{4}{section.3}
-\contentsline {section}{\numberline {4}Calculation of the calibration factors}{6}{section.4}
-\contentsline {section}{\numberline {5}Attenuation of inter-run variations}{7}{section.5}
-\contentsline {section}{\numberline {6}Aggregation of multiple independent biological replicates from the same experiment}{8}{section.6}
-\contentsline {section}{\numberline {7}RStudio and gWidgets: tools to facilitate your qPCR data analysis}{11}{section.7}
-\contentsline {section}{\numberline {8}How to analyse qPCR data with EasyqpcR when samples and genes are spread across runs ?}{15}{section.8}
